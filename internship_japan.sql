@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 18 jun 2021 om 09:17
--- Serverversie: 10.4.17-MariaDB
--- PHP-versie: 8.0.2
+-- Gegenereerd op: 18 jun 2021 om 11:21
+-- Serverversie: 10.4.18-MariaDB
+-- PHP-versie: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,6 +44,14 @@ CREATE TABLE `company` (
   `email_contactpersoon` varchar(50) DEFAULT NULL,
   `website` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `company`
+--
+
+INSERT INTO `company` (`company_id`, `user_id`, `companyname`, `street_adress`, `postal_code`, `city`, `countryid`, `profiletext`, `position`, `positiontext`, `video`, `logo`, `contactpersoon`, `email_contactpersoon`, `website`) VALUES
+(107, NULL, 'test naam', 'test', '0932 DS', 'Nijmegen', NULL, 'test prof', 'test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum magna at rutrum eleifend. Donec vestibulum mi a mattis fringilla. Nulla facilisi. Duis suscipit elit vel quam rhoncus, tempor vehicula augue ultrices. Duis non lectus eu arcu hendrerit blandit. Ut efficitur malesuada elit a consectetur. Ut molestie sollicitudin ultrices. Integer bibendum felis et finibus tincidunt.\r\n\r\nMorbi condimentum consectetur efficitur. Aliquam vel elit non enim gravida iaculis interdum in lorem. Proin finibus sit amet neque non placerat. Nulla facilisi. Nulla pulvinar a ipsum in molestie. Duis ultricies gravida ante ac porta. Ut nec mauris purus. Nulla vitae rhoncus diam, ut volutpat urna. Praesent vulputate vitae nunc et porta. Sed nisl nibh, auctor pharetra justo sit amet, porta egestas eros. Vivamus convallis feugiat metus, nec laoreet justo vestibulum non. Morbi fermentum leo non vulputate luctus. Curabitur finibus sapien vel lectus euismod accumsan. Mauris vitae hendrerit metus.\r\n\r\nMau', 'test vid', 'test logo', 'test contact persoon', 'test email', 'test web'),
+(108, NULL, 'test naam1', 'test1', '0932 DS1', 'Nijmegen1', NULL, 'test prof1', 'test', '1\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum magna at rutrum eleifend. Donec vestibulum mi a mattis fringilla. Nulla facilisi. Duis suscipit elit vel quam rhoncus, tempor vehicula augue ultrices. Duis non lectus eu arcu hendrerit blandit. Ut efficitur malesuada elit a consectetur. Ut molestie sollicitudin ultrices. Integer bibendum felis et finibus tincidunt.\r\n\r\nMorbi condimentum consectetur efficitur. Aliquam vel elit non enim gravida iaculis interdum in lorem. Proin finibus sit amet neque non placerat. Nulla facilisi. Nulla pulvinar a ipsum in molestie. Duis ultricies gravida ante ac porta. Ut nec mauris purus. Nulla vitae rhoncus diam, ut volutpat urna. Praesent vulputate vitae nunc et porta. Sed nisl nibh, auctor pharetra justo sit amet, porta egestas eros. Vivamus convallis feugiat metus, nec laoreet justo vestibulum non. Morbi fermentum leo non vulputate luctus. Curabitur finibus sapien vel lectus euismod accumsan. Mauris vitae hendrerit metus.\r\n\r\nMa', 'test vid', 'test logo1', 'test contact persoon1', 'test email1', 'test web1');
 
 -- --------------------------------------------------------
 
@@ -421,7 +429,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT voor een tabel `company`
 --
 ALTER TABLE `company`
-  MODIFY `company_id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `company_id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 
 --
 -- AUTO_INCREMENT voor een tabel `education`
